@@ -1,13 +1,13 @@
 package lk.ijse.dep.pos.controller;
 
-import lk.ijse.dep.pos.business.BOFactory;
-import lk.ijse.dep.pos.business.BOTypes;
+import lk.ijse.dep.pos.AppInitializer;
 import lk.ijse.dep.pos.business.custom.CustomerBO;
 import lk.ijse.dep.pos.business.custom.ItemBO;
 import lk.ijse.dep.pos.business.custom.OrderBO;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
+import lk.ijse.dep.pos.business.custom.impl.CustomerBOImpl;
 import lk.ijse.dep.pos.dto.CustomerDTO;
 import lk.ijse.dep.pos.dto.ItemDTO;
 import lk.ijse.dep.pos.dto.OrderDTO;
@@ -31,11 +31,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
-import net.sf.jasperreports.view.JasperViewer;
 import lk.ijse.dep.pos.util.OrderDetailTM;
 
 import java.io.IOException;
@@ -70,9 +67,9 @@ public class PlaceOrderFormController {
 
     private List<ItemDTO> tempItems = new ArrayList<>();
 
-    private CustomerBO customerBO = BOFactory.getInstance().getBO(BOTypes.CUSTOMER);
-    private ItemBO itemBO = BOFactory.getInstance().getBO(BOTypes.ITEM);
-    private OrderBO orderBO = BOFactory.getInstance().getBO(BOTypes.ORDER);
+    private CustomerBO customerBO = AppInitializer.ctx.getBean(CustomerBO.class);
+    private ItemBO itemBO = AppInitializer.ctx.getBean(ItemBO.class);
+    private OrderBO orderBO = AppInitializer.ctx.getBean(OrderBO.class);
 
     public void initialize() {
 
