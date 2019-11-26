@@ -7,18 +7,19 @@ import lk.ijse.dep.pos.entity.OrderDetail;
 import lk.ijse.dep.pos.entity.OrderDetailPK;
 import org.hibernate.Session;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class OrderDetailDAOImpl extends CrudDAOImpl<OrderDetail,OrderDetailPK> implements OrderDetailDAO {
 
     @Override
     public boolean existsByItemCode(String itemCode) throws Exception {
         System.out.println(itemCode);
-        return session.createNativeQuery("SELECT  * FROM OrderDetail Where item_code=?1").setParameter(1,itemCode).uniqueResult()!=null;
+        return getSession().createNativeQuery("SELECT  * FROM OrderDetail Where item_code=?1").setParameter(1,itemCode).uniqueResult()!=null;
     }
 
 }

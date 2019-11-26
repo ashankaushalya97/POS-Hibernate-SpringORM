@@ -28,6 +28,7 @@ public class AppInitializer extends Application {
 
             ctx = new AnnotationConfigApplicationContext();
             ctx.register(AppConfig.class);
+            ctx.register(HibernateConfig.class);
             ctx.refresh();
 
             // Let's setup the root logger
