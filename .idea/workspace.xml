@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a13cfea5-4c27-4649-8e65-ec2a74bf1d09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pkg1/lk/ijse/dep/pos/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pkg1/lk/ijse/dep/pos/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg1/src/lk/ijse/dep/pos/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pkg1/src/lk/ijse/dep/pos/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg1/src/lk/ijse/dep/pos/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pkg1/src/lk/ijse/dep/pos/AppInitializer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574677888193</updated>
       <workItem from="1574677889417" duration="3676000" />
-      <workItem from="1574742576463" duration="7732000" />
+      <workItem from="1574742576463" duration="10569000" />
     </task>
     <servers />
   </component>

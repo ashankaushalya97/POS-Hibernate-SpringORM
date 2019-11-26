@@ -20,6 +20,7 @@ public class AppInitializer extends Application {
         launch(args);
         System.out.println("Shutting down the connection");
         HibernateUtil.getSessionFactory().close();
+        ctx.close();
     }
 
     @Override
